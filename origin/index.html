@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipe Hire</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <header>
+      <div class="main-nav">
+        <div class="menu-icon">
+          <span></span>
+        </div>
+        <div class="menu">
+          <div class="logo">
+            <h1>SwipeHire</h1>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">MY</a></li>
+              <li><a href="#">LIST</a></li>
+              <li><a href="#">TOP</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1>DEMO</h1>
+      <div class="card-wrap">
+        <!-- Container for the swipe cards -->
+        <div class="card-container" id="card-container"></div>
+        <div class="swipe-btn-set">
+          <button id="left-button" class="swipe-btn Left">&times;</button>
+          <button id="right-button" class="swipe-btn Right">
+            <div class="btn_icon star">
+              <img src="image/star.svg" alt="気になる">
+            </div>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Refresh Button -->
+    <button id="refresh-button" class="refresh-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#e8ebeb"
+      >
+        <path
+          d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80Z"
+        />
+      </svg>
+    </button>
+
+    <!-- Dialog Box -->
+    <div id="dialog" class="dialog">
+      <div class="dialog-content">
+        <div class="close-btn" id="close-btn"></div>
+        <div class="dialog-img" id="dialog-img"></div>
+        <div class="dialog-title">
+          <h2 class="dialog-name" id="dialog-name"></h2>
+          <p class="dialog-info" id="dialog-location"></p>
+          <p class="dialog-info" id="dialog-ageheight"></p>
+        </div>
+        <p class="dialog-crime" id="dialog-crime"></p>
+        <p class="dialog-description" id="dialog-description"></p>
+        <button id="contact-button" class="contact-btn">応募</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
